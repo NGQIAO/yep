@@ -1,0 +1,372 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>YEAH.Dim Sum</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Solway&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+        <meta charset="UTF-8">
+        <title>login</title>
+        <style>
+            html {
+                font-size: 16px;
+                width: 100%;
+                text-decoration: none;
+            }
+
+            body {
+                background-size: cover;
+                display: grid;
+                overflow: hidden;
+                place-items: center;
+                height:auto;
+            }
+
+header{
+    z-index:1000;
+    width:100%;
+    position:fixed;
+    top: 0;
+}
+
+            .logo {
+        width: 170px;
+        cursor: pointer;
+        vertical-align: none;
+        border-style: none;
+        padding: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: none;
+        display:inline-block;
+    }
+    nav{
+        width:100%;
+        height:170px;
+        background-color:brown;
+        text-transform: none;
+        position:fixed;
+        z-index: 1000;
+    }
+    ul{
+    display:inline-block;
+    position: fixed;
+    padding-top: 60px;
+    }
+    
+    ul li{
+        list-style:none;
+        display:inline-block;
+    }
+    
+    
+    ul li a{
+        text-decoration:none;
+        font-size:20px;
+        font-family:arial;
+        color:whitesmoke;
+        top:0;
+        margin-left:55px;
+    }
+    
+    ul li a:hover{
+        color:yellow
+    }
+
+    i{
+        font-size: 30px;
+        color:white;
+        display:inline-block;
+        margin-top:3px;
+        margin-left:2px;
+    }
+    
+    i:hover{
+        color:yellow;
+    }
+
+    .loginpage{
+        margin-top:160px;
+    }
+
+            .bg{
+              position:absolute;
+              width:100%;
+              height:100%;
+              left:0;
+              right:0;
+            }
+
+            .tit {
+                font-weight: 500px;
+                font-size: 40px;
+                margin: 0;
+                margin-bottom: 1.25rem;
+                top:5px
+            }
+
+            .link {
+                color: #333;
+                font-size: 18px;
+                margin: 1.5rem 0;
+                cursor: pointer;
+                color:red;
+            }
+
+            .link:hover{
+              color:orange;
+            }
+
+            .container {
+                background: #fff;
+                box-shadow: 0 11px 17px rgba(0,0,0,0.25),0 7px 7px rgba(0,0,0,0.22);
+                width: 400px;
+                height: 500px;
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 40px;
+                border-radius: 20px;
+                margin-top: 150px;
+            }
+            
+            .container.on .login-box {
+                transform: translateY(-100%);
+            }
+
+            .form-box {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.6s ease-in-out;
+            }
+
+            .btn {
+                background: #07c160;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.0rem;
+                padding: 0.6rem 3rem;
+                font-weight: bold;
+                margin-top: 1.5rem;
+                border-radius: 0.2rem;
+                transition: transform 80ms ease-in;
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
+
+            .btn:active {
+                transform: scale(0.9);
+            }
+
+            .form {
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 3rem;
+                box-sizing: border-box;
+            }
+
+            input {
+                border: none;
+                background: #f5f5f5;
+                margin: 0.5rem 0;
+                padding: 0.9rem;
+                width: 100%;
+            }
+
+            p{
+              font-size:18px
+            }
+
+            .info{
+        border:transparent;
+        display:inline-block;
+        font-size:15px;
+        font-family: Verdana,sans-serif;
+
+      }
+
+      
+      h2{font-weight:bold}
+      
+      .fab {
+        padding: 20px;
+        font-size: 15px;
+        margin: 5px 2px;
+        margin-bottom: 100px;        
+      }
+      
+      .fab:hover {
+          opacity: 0.7;
+          color:blue;
+      }
+      
+      .info-container{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+          gap: 13px;
+          background-color: silver;
+          text-align: left;
+          padding-left:20px;
+          width:100%;
+          padding-bottom: 20px;
+          margin-top:80px;
+          padding-top:20px
+      }
+      
+      .subscribe{
+     text-decoration: none;
+      background-color: red;
+      display:block;
+      color:white;
+      border-color: white;
+      margin-top:10px;
+      margin-bottom: 10px;
+      }
+      
+      .subscribe:hover{
+          opacity:0.5;
+      }
+      
+      .fa{
+          font-size: 30px;
+      }
+      .y{color:black;
+        font-style:italic;
+        font-weight:bold}
+        
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <img src="C:\Users\micha\Downloads\ask project\YEAHDIMSUM\ask pic file\c3d2ce8a-775b-48d9-97d9-80753eaf1e09.png" class="logo">
+            <ul>
+        <li><a href="index.html#home" 
+        class><i class="fas fa-home"></i> Home </a></li>
+        <li><a href="index.html#aboutus" 
+        class><i class="fas fa-heart"></i> About us </a></li>
+        <li><a href="index.html#category" 
+        class> <i class="fa fa-th-large	"></i> Category </a></li>
+        <li><a href="menu.html" 
+        class><i class="fas fa-cloud"></i> Menu </a></li>
+        <li><a href="index.html#review" 
+        class><i class="fas fa-user"></i> Review </a></li>
+        <li><a href="login.html" 
+        class><i class="fas fa-bars"></i> Login </a></li>
+        <li><a href="https://www.google.com/search" class><i class="fas fa-search"></i></a></li>
+        <li><a href="menu.html" class><i style="font-size:35px;" class="fa fa-shopping-cart"></i></a></li>
+        
+            </ul>
+            </nav>
+        </header>   
+      
+      <section class="loginpage">
+        <img class="bg" src="C:\Users\micha\Downloads\ask project\YEAHDIMSUM\ask pic file\bg.jpg">
+      </div>
+        <div class="container">
+            <div class="form-box register-box">
+                <form action="#" class="form">
+                    <h2 class="tit">SIGN-UP</h2>
+                    <input type="text" placeholder="username" class="input"></input>
+                    <input type="tel" maxlength="11" placeholder="e-mail" class="input"></input>
+                    <input type="password" placeholder="password" class="input"/>
+                    <a href="menu.html" button class="btn">SIGN-UP</button></a>
+                    <p>Already have an account?<a class="link" id="loginBut"> Login</a></p>
+                </form>
+          
+            <div class="form-box login-box">
+                <form action="#" class="form">
+                    <h2 class="tit">LOGIN</h2>
+                    <input type="tel" maxlength="11" placeholder="username" class="input"></input>
+                    <input type="password" placeholder="password" class="input"/>
+                    <a href="menu.html" button class="btn">LOGIN</button></a>
+                    <p>Haven't sign-up?<a class="link" id="registerBut"> Sign-up</a> now!</p>
+                </form>
+            </div>
+            </div>
+            <script>
+                let loginBut = document.getElementById("loginBut");
+                let registerBut = document.getElementById("registerBut");
+                let container = document.querySelector(".container");
+                loginBut.addEventListener("click", ()=>{
+                    container.classList.remove("on");
+                }
+                );
+                registerBut.addEventListener("click", ()=>{
+                    container.classList.add("on");
+                }
+                )
+            </script>
+        </section>
+        <div class="info-container" >
+            <div class="info">
+            <h2 style="font-weight:bold">Yeah Dim Sum</h2>
+            <p>Thank you for supporting our Dim Sum restaurant! <span class="y">Like </span>and <span class="y"
+            >Share </span>Yeah Dim Sum to your everyone!</p>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            </div>
+            
+        <div class="info">
+            <h2 style="font-weight:bold">Contact info</h2>
+            <p><i class="fas fa-phone" style="color:black"></i> +60123456789</p>
+            <p><i class="far fa-clock" style="color:black"></i> 8.00a.m. to 8.00p.m.</p>
+            <p><i class="far fa-envelope-open" style="color:black"></i> Yeah@yahoo.com</p>
+            <p><i class="fas fa-map-marker-alt" style="color:black"></i>No 12, Jalan Di Mana , Taman Ke Sana, 31650 ,Ipoh ,Perak</p>
+        </div>
+        
+            <div class="info">
+            <h2 style="font-weight:bold">Quick Link</h2>
+        <li><a href="index.html#home" style="text-decoration: none" ><i class="far fa-hand-point-right" style="color:black"></i> Home </a></li>
+        <li><a href="index.html#aboutus" style="text-decoration: none" ><i class="far fa-hand-point-right" style="color:black"></i> About us </a></li>
+        <li><a href="index.html#category" style="text-decoration: none" > <i class="far fa-hand-point-right" style="color:black"></i> Category </a></li>
+        <li><a href="index.html" style="text-decoration: none" ><i class="far fa-hand-point-right" style="color:black"></i> Menu </a></li>
+        <li><a href="index.html#review" style="text-decoration: none" ><i class="far fa-hand-point-right" style="color:black"></i> Review </a></li>
+        <li><a href="login.html" style="text-decoration: none" ><i class="far fa-hand-point-right" style="color:black"></i> Login </a></li>
+            </div>
+        
+            <div class="info">
+            <h2 style="font-weight:bold">News Letter</h2>
+            <p style="color:rgb(121, 37, 37)">subscribe for the latest updates</p>
+            <input type="text" placeholder="e-mail">
+            <button class="subscribe" type="button" onclick="alert('Welcome to Yeah Dim Sum')">Subscribe</button>
+            <i class="fa fa-cc-paypal" style="color:black"></i>
+            <i class="fa fa-cc-mastercard" style="color:black"></i>
+            <i class="fa fa-cc-visa" style="color:black"></i>
+            <i class="fa fa-cc-jcb" style="color:black"></i>
+            </div>
+        </div>
+        
+    </body>
+</html>

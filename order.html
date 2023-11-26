@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>YEAH.Dim Sum</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Solway&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.logo {
+    width: 170px;
+    cursor: pointer;
+    vertical-align: none;
+    border-style: none;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    display:inline-block;
+}
+nav{
+    width:100%;
+    height:170px;
+    background-color:brown;
+    text-transform: none;
+    position:fixed;
+    z-index: 1000;
+    top:0;
+    left:0
+}
+ul{
+display:inline-block;
+position: fixed;
+padding-top: 40px;
+}
+
+ul li{
+    list-style:none;
+    display:inline-block;
+}
+
+
+ul li a{
+    text-decoration:none;
+    font-size:20px;
+    font-family:arial;
+    color:whitesmoke;
+    top:0;
+    margin-left:55px;
+}
+
+ul li a:hover{
+    color:yellow
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  background-color: darkblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3{
+  font-weight:bold
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-top:170px
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+ 
+
+
+</style>
+<body>
+  <header>
+    <nav id="navbar">
+        <img src="C:\Users\micha\Downloads\ask project\YEAHDIMSUM\ask pic file\c3d2ce8a-775b-48d9-97d9-80753eaf1e09.png" class="logo">
+    <ul>
+<li><a href="index.html#home" 
+class><i class="fas fa-home"></i> Home </a></li>
+<li><a href="index.html#aboutus" 
+class><i class="fas fa-heart"></i> About us </a></li>
+<li><a href="index.html#category" 
+class> <i class="fa fa-th-large	"></i> Category </a></li>
+<li><a href="menu.html" 
+class><i class="fas fa-cloud"></i> Menu </a></li>
+<li><a href="index.html#review" 
+class><i class="fas fa-user"></i> Review </a></li>
+<li><a href="login.html" 
+class><i class="fas fa-bars"></i> Login </a></li>
+<li><a href="https://www.google.com/search" class><i class="fas fa-search"></i></a></li>
+<li><a href="index.html" class><i class="fa fa-shopping-cart" style="font-size: 28px;"></i></a></li>
+
+    </ul>
+    </nav>
+</header>
+<div class="container">        
+
+    <div class="col-75">
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user" style="color:black"></i> Full Name:</label>
+              <input type="text" id="fname" name="firstname" placeholder="Yan">
+              <label for="email"><i class="fa fa-envelope" style="color:black"></i> E-mail:</label>
+              <input type="text" id="email" name="email" placeholder="yan@example.com">
+              <label for="adr"><i class="fa fa-address-card-o" style="color:black"></i> Address:</label>
+              <input type="text" id="adr" name="address" placeholder="Unit-Street">
+              <label for="city"><i class="fa fa-institution" style="color:black"></i> City:</label>
+              <input type="text" id="city" name="city" placeholder="Ipoh">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State:</label>
+                  <input type="text" id="state" name="state" placeholder="Perak">
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Others:</label>
+                <input type="text" id="others" name="others" style="padding-bottom:10px;"
+                placeholder="Please note down your needs">
+              </div>
+            </div>
+          </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <div>
+              <label style="padding-top: 20px;">Select payment:</label>
+              <div class="cus-select" style="width:320px;">
+              
+                <select>
+                  <option value="0">Cash Payment</option>
+                  <option value="1">Visa</option>
+                  <option value="2">Touch'n Go</option>
+                  <option value="3">Credit Card or Debit Card
+                  </option>
+                </select>
+                </div>
+                <br>
+              <label for="fname">Accepted Cards:</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card:</label>
+              <input type="text" id="cname" name="cardname" placeholder="cardholder name">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="December">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year:</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2023">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="0000">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <a href="submit.html" type="button" class="btn">Submit Order</input></a>
+        </form>
+      </div>
+    </div>
+  
+  
+   
+
+<script>var x, i, j, l, ll, selElmnt, a, b, c;
+
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+     
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+       
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function(e) {
+           
+            var y, i, k, s, h, sl, yl;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            sl = s.length;
+            h = this.parentNode.previousSibling;
+            for (i = 0; i < sl; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                yl = y.length;
+                for (k = 0; k < yl; k++) {
+                  y[k].removeAttribute("class");
+                }
+                this.setAttribute("class", "same-as-selected");
+                break;
+              }
+            }
+            h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function(e) {
+          
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+      
+      var x, y, i, xl, yl, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    
+    document.addEventListener("click", closeAllSelect);
+    </script>      
+</body>
+</html>
+
+
+
